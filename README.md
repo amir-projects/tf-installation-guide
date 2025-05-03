@@ -3,7 +3,9 @@ My only challenge when it comes to Terraform is that the installation instructio
 So here’s a tutorial on how to install Terraform in Windows 11 and make it work in Command Prompt, Powershell, and Git Bash with instructions and screenshots you can follow.
 
 ### Terraform installation 
-** Download Terraform binary for Windows
+```
+Download Terraform binary for Windows
 Extract terraform.exe
 Add Terraform folder in Path Environment Variable
-Testing terraform Command **
+Testing terraform Command
+```
