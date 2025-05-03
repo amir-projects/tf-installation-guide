@@ -7,3 +7,6 @@ So here’s a tutorial on how to install Terraform in Windows 11 and make it wor
 - Extract terraform.exe
 - Add Terraform folder in Path Environment Variable
 - Testing terraform Command
+  1. Download Terraform binary for Windows
+  Go to https://developer.hashicorp.com/terraform/install  then go down for your desired Operating System select  processor 
+  type 386 or ARM look for the Windows section. Click on Download.
