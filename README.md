@@ -1,53 +1,43 @@
-<!-- Terraform Installation Guide -->
+<!-- 🚀 Advanced Terraform Installation Guide (Windows 11) -->
 
-<p align="left">
-# Terraform Installation Guide for Windows 11
+<p align="right">
+# Installing Terraform on Windows 11
 </p>
 
-<p align="leftt">
-I have been using Terraform to deploy infrastructure on AWS, Google Cloud, and Azure. It simplifies multi-cloud provisioning with a unified syntax.
-However, the official installation guide lacks details. Here’s a step-by-step tutorial with instructions and screenshots.
-</p>
+## 💾 **Step 1: Download Terraform Binary**
+- Navigate to the [Terraform official site](https://developer.hashicorp.com/terraform/install).
+- Scroll down to the **Windows** section.
+- Choose the processor type (**386** or **ARM**).
+- Download the latest ZIP file (`terraform_1.x.x_windows_amd64.zip`).
+
+> ⚠ **Note:** Version numbers change over time. If following this guide later, ensure you're downloading the most recent version.
 
 ---
 
-## **Steps to Install Terraform on Windows 11**
-
-### **1. Download Terraform Binary**
-<p align="left">
-- Go to [Terraform official site](https://developer.hashicorp.com/terraform/install).
-- Scroll down to the Windows section.
-- Select processor type (386 or ARM).
-- Download the latest version (e.g., `terraform_1.1.36_windows_amd64.zip`).
-</p>
-
----
-
-### **2. Extract Terraform Executable**
-<p align="left">
+## 📂 **Step 2: Extract `terraform.exe`**
 - Locate the downloaded ZIP file.
-- Right-click and select **Extract All**.
-- Choose a target folder (e.g., `C:\Programs\Terraform`).
-- Click **Extract** to complete the process.
-</p>
+- Right-click and choose **Extract All…**.
+- Select your target directory (**Recommended:** `C:\Programs\Terraform\`).
+- Click **Extract**.
+- Verify that `terraform.exe` is inside the chosen folder.
 
 ---
 
-### **3. Add Terraform to Path Environment Variable**
-<p align="leftt">
-- Open **Start Menu** and search for `Environment Variables`.
-- Click on **Edit the system environment variables**.
-- In the Environment Variables window:
-  - Under **User Variables**, select `Path` and click **Edit**.
-  - Click **New**, then enter your Terraform folder path (e.g., `C:\Programs\Terraform`).
-  - Click **OK** to save changes.
-</p>
+## 🔗 **Step 3: Configure Environment Variables**
+The **Path Environment Variable** allows Terraform commands to be recognized globally.
+
+1. Open **Start Menu** and search for `Environment Variables`.
+2. Click **Edit the system environment variables**.
+3. In the **System Properties** window, click **Environment Variables**.
+4. Under **User variables**, select `Path` and click **Edit**.
+5. Click **New**, then enter your Terraform installation folder (e.g., `C:\Programs\Terraform\`).
+6. Click **OK** to save changes.
 
 ---
 
-### **4. Verify Installation**
-<p align="leftt">
-- Close all instances of PowerShell, Command Prompt, or Git Bash.
-- Open a new terminal and run:
-  ```sh
-  terraform --version
+## ✅ **Step 4: Verify Installation**
+Close all instances of **PowerShell**, **Command Prompt**, or **Git Bash**, then reopen them.
+
+Run:
+```
+terraform --version
